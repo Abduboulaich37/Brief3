@@ -73,9 +73,9 @@ Route::get("test", function () {
     $promotion->name = "solo ";
     $promotion->save();
     $apprentice = new App\Models\Apprentice;
-    $apprentice->first_name = "mohad";
-    $apprentice->last_name = "chellout";
-    $apprentice->email = "chelt@nakiss.com";
+    $apprentice->first_name = "abdu";
+    $apprentice->last_name = "boulaich";
+    $apprentice->email = "abduboulaich@gmail.com";
     $apprentice->promotion()->associate($promotion);
     $apprentice->save();
     return $apprentice;
